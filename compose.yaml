@@ -1,5 +1,18 @@
 services:
+  app:
+    build:
+      context: .
+    ports:
+      - "8080:80"
+
   postgres:
     image: postgres
+    environment:
+      POSTGRES_DB: mydatabase
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
     ports:
-      - "5433:5432"  # Change host port from 5432 to 5433
+      - "5433:5432"  # <-- Host port changed to 5433 to stop the build failure!
+
+  redis:
+    image: redis:alpine

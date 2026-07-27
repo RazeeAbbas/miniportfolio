@@ -1,8 +1,5 @@
 services:
-  app:
-    build:
-      context: .
-    container_name: miniportfolio-app
+  postgres:
+    image: postgres
     ports:
-      - "8080:80"
-    restart: unless-stopped
+      - "5433:5432"  # Change host port from 5432 to 5433

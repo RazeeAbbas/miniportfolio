@@ -3,7 +3,7 @@ services:
     build:
       context: .
     ports:
-      - "8080:80"
+      - "8082:80"  # <-- Change 8080 to 8082 (or another free port like 8085)
 
   postgres:
     image: postgres
@@ -12,7 +12,7 @@ services:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
     ports:
-      - "5433:5432"  # <-- Host port changed to 5433 to stop the build failure!
+      - "5433:5432"  # Keep 5433 here to avoid the postgres port conflict
 
   redis:
     image: redis:alpine

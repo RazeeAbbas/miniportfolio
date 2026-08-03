@@ -1,3 +1,5 @@
+# Mini Portfolio
+[![pages-build-deployment](https://github.com/RazeeAbbas/miniportfolio/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/RazeeAbbas/miniportfolio/actions/workflows/pages/pages-build-deployment)
 
 # Mini Portfolio
 [![Portfolio CI](https://github.com/RazeeAbbas/miniportfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/RazeeAbbas/miniportfolio/actions/workflows/ci.yml)
